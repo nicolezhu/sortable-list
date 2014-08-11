@@ -1,0 +1,79 @@
+body {
+	font-family: Alright Sans, sans-serif;
+}
+
+.m-entry__body ul>li:before, .mceContentBody ul>li:before, .feature-body ul>li:before, .m-stream__update__body ul>li:before, .m-explainer__card-content ul>li:before { 
+  background: transparent; 
+}
+
+.sortable-list {
+  overflow: auto;
+}
+
+.selected {
+  color: #4c4e4d;
+  background-color: #fff200 !important;
+}
+
+#sortable ul {
+  position: absolute;
+  list-style-type: none;
+	margin: 0 !important;
+	padding: 0;
+}
+
+ul {
+  margin: 0 !important;
+}
+
+#sortable li {
+	margin: 0 3px 3px 3px;
+	padding: 0.4em;
+	font-size: 1.2em;
+	font-weight: 600;
+	color: #4c4e4d;
+	background-color: #bfd1df;
+	cursor: pointer;
+	text-align: center;
+  width: 40%;
+  line-height: 1.5;
+}
+
+.correct {
+	background-color: #7CCD7C !important;
+}
+
+.incorrect {
+	background-color: #f44 !important;
+}
+
+button {
+  -o-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -webkit-transition: 0.2s
+  transition: 0.2s;
+  font-size: .8em;
+  height: 40px;
+  text-transform: uppercase;
+  line-height: 1;
+  display: inline-block;
+  cursor: pointer;
+  width: 19.5%;
+  margin: 15px 2px -5px 2px;
+  padding: .8em .3em .6em;
+  border: 0;
+  font-family: Alright Sans, sans-serif;
+  color: #fff;
+  background-color: #4c4e4d;
+}
+
+button:hover {
+  background-color: #bfd1df !important;
+  color: #4c4e4d !important;
+}
+
+#reset {
+	width: 40%;
+	height: 40px;
+}
