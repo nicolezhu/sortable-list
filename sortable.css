@@ -1,5 +1,6 @@
 body {
 	font-family: Alright Sans, sans-serif;
+  background-color: #e9e7e8;
 }
 
 .m-entry__body ul>li:before, .mceContentBody ul>li:before, .feature-body ul>li:before, .m-stream__update__body ul>li:before, .m-explainer__card-content ul>li:before { 
@@ -8,11 +9,43 @@ body {
 
 .sortable-list {
   overflow: auto;
+  border-top: 5px solid #6d98a8;
+  width: 40%;
+}
+
+.tab {
+  -o-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -webkit-transition: 0.2s
+  transition: 0.2s;
+  font-size: .8em;
+  text-align: center;
+  height: 40px;
+  text-transform: uppercase;
+  line-height: 1;
+  display: inline-block;
+  cursor: pointer;
+  width: 16.5%;
+  margin: 15px 2px -5px 0px;
+  padding: 1.2em .3em .1em;
+  border: 0;
+  font-family: Alright Sans, sans-serif;
+  color: #fff;
+  background-color: #a2bec7;
+}
+
+.tab:hover {
+  background-color: #4c4e4d;
 }
 
 .selected {
-  color: #4c4e4d;
-  background-color: #fff200 !important;
+  color: #fff;
+  background-color: #6d98a8 !important;
+}
+
+#sortable {
+  list-style-type: none;
 }
 
 #sortable ul {
@@ -35,7 +68,7 @@ ul {
 	background-color: #bfd1df;
 	cursor: pointer;
 	text-align: center;
-  width: 40%;
+  width: 100%;
   line-height: 1.5;
 }
 
@@ -69,8 +102,7 @@ button {
 }
 
 button:hover {
-  background-color: #bfd1df !important;
-  color: #4c4e4d !important;
+  background-color: #6d98a8 !important;
 }
 
 #reset {
