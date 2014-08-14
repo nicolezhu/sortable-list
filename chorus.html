@@ -1,0 +1,47 @@
+<p>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.js"></script>
+<script src="http://cdn1.vox-cdn.com/dev/sandbox-www-data-ip-10-139-12-183_/assets/4338832/sandbox_jquery.ui.touch-punch.min.js"></script>
+<script src="http://cdn0.vox-cdn.com/dev/sandbox-www-data-ip-10-139-12-183_/assets/4338805/sandbox_script.js"></script>
+<script type="text/javascript">
+$(document).bind('pageinit', function() {
+    $("#sortable").sortable({
+scroll: false;
+});
+$("#sortable").disableSelection();
+});
+</script>
+<link href="http://cdn0.vox-cdn.com/dev/sandbox-www-data-ip-10-139-12-183_/assets/4338841/sandbox_sortable.css" type="text/css" rel="stylesheet" />
+<style>
+body { overflow-x:hidden; }
+</style>
+</p>
+<div id="orderAlbums" class="tab">Albums</div>
+<div id="orderSingles" class="tab">Singles</div>
+<div class="sortable-list">
+<ul id="sortable" class="albums">
+<li class="ui-state-default">AC/DC</li>
+<li class="ui-state-default">The Eagles</li>
+<li class="ui-state-default">Elvis Presley</li>
+<li class="ui-state-default">Billy Joel</li>
+<li class="ui-state-default">Michael Jackson</li>
+<li class="ui-state-default">Led Zeppelin</li>
+<li class="ui-state-default">The Beatles</li>
+<li class="ui-state-default">Elton John</li>
+<li class="ui-state-default">Pink Floyd</li>
+<li class="ui-state-default">Garth Brooks</li>
+</ul>
+<ul id="sortable" class="singles">
+<li class="ui-state-default">Justin Bieber</li>
+<li class="ui-state-default">Lil Wayne</li>
+<li class="ui-state-default">Lady Gaga</li>
+<li class="ui-state-default">Rihanna</li>
+<li class="ui-state-default">Eminem</li>
+<li class="ui-state-default">Kanye West</li>
+<li class="ui-state-default">Katy Perry</li>
+<li class="ui-state-default">Flo Rida</li>
+<li class="ui-state-default">Taylor Swift</li>
+<li class="ui-state-default">Bruno Mars</li>
+</ul>
+</div>
+<p><button id="checkAnswers">Check answers</button> <button id="showAnswers">Show answers</button> <br /> <button id="reset">Reset</button></p>
