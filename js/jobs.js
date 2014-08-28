@@ -1,5 +1,6 @@
 $(document).ready(function() {
 	var correct_ordering = ['Anesthesiologists', 'Chief executives', 'Computer hardware engineers', 'High school teachers', 'Locomotive engineers', 'Fine artists', 'Legislators', 'Logging workers', 'Crossing guards', 'Farmworkers, livestock', 'Childcare workers', 'Cooks, fast food'];
+	var wages = ['$235,070', '$121,010', '$106,930', '$58,050', '$55,660', '$50,900', '$39,320', '$35,600', '$26,530', '$24,760', '$21,490', '$18,870'];
 	var total_items = $('#sortable li').size();
 	var list_items = [];
 	var original_list = [];
@@ -57,11 +58,13 @@ $(document).ready(function() {
 				}
 			}
 		}
+		//$('.wages').show();
 	}
 
 	function reset() {
 		$('.jobs').html(original_list).sortable();
 		removeColors();
+		$('.wages').hide();
 	}
 
 	function removeColors() {
@@ -72,8 +75,9 @@ $(document).ready(function() {
 	function showAnswers() {
 		$(".jobs li").remove();
 		for (var i = 0; i < correct_ordering.length; i++) {
-			$('.jobs').append('<li class="ui-state-default ui-sortable-handle">' + correct_ordering[i] + '</li>');
+			$('.jobs').append('<li class="ui-state-default ui-sortable-handle">' + correct_ordering[i] + '<br><span class="wages">' + wages[i] + '</span></li>');
 		}
+		$('.wages').show();
 		$('.jobs li').addClass('correct');
 		$('.jobs').sortable();
 	}

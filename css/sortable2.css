@@ -29,7 +29,7 @@ ul {
 }
 
 #sortable li {
-	margin: 0 3px 3px 3px;
+	margin: 0 3px 4px 3px;
 	padding: 0.4em;
 	font-size: 1.2em;
 	font-weight: 600;
@@ -37,7 +37,7 @@ ul {
 	background-color: #bfd1df;
 	cursor: pointer;
 	text-align: center;
-  line-height: 1.5;
+  line-height: 1.2;
 }
 
 .correct {
@@ -78,13 +78,16 @@ button:hover {
 	height: 40px;
 }
 
+.wages {
+  font-family: Alright Sans, sans-serif;
+  font-size: .8em;
+  font-weight: 300;
+  display: none;
+}
+
 @media only screen and (min-width : 320px) and (max-width : 480px) {
   .sortable-list {
     width: 100%;
-  }
-
-  .tab {
-    width: 25%;
   }
 
   #checkAnswers {
