@@ -1,6 +1,6 @@
 $(document).ready(function() {
-	var correct_ordering = ['Anesthesiologists', 'Petroleum engineers', 'Chief executives', 'Computer hardware engineers', 'Nurse practitioners', 'Mechanical engineers', 'Fashion designers', 'Registered nurses', 'High school teachers', 'Clergy', 'All occupations', 'Legislators', 'Logging workers', 'Farmworkers, livestock', 'Cooks, fast food'];
-	var wages = ['$235,070', '$149,180', '$121,010', '$106,930', '$95,070', '$85,930', '$73,570', '$68,910', '$58,050', '$47,540', '$46,440', '$39,320', '$35,600', '$24,760', '$18,870'];
+	var correct_ordering = ['Anesthesiologists', 'Petroleum engineers', 'Chief executives', 'Computer hardware engineers', 'Nurse practitioners', 'Fashion designers', 'Registered nurses', 'High school teachers', 'Clergy', 'Legislators', 'Logging workers', 'Farmworkers, livestock', 'Cooks, fast food'];
+	var wages = ['$235,070', '$149,180', '$121,010', '$106,930', '$95,070', '$73,570', '$68,910', '$58,050', '$47,540', '$39,320', '$35,600', '$24,760', '$18,870'];
 	var total_items = $('#sortable li').size();
 	var list_items = [];
 	var original_list = [];
@@ -13,6 +13,7 @@ $(document).ready(function() {
 
 	function checkOrder() {
 		list_items = [];
+		$('.wages').remove();
 		$(".jobs li").each(function() { list_items.push($(this).text()) });
 		console.log(list_items);
 		arraysEqual(list_items, correct_ordering);
